@@ -1,0 +1,7 @@
+<p>second works!</p>
+<ol>
+  <li *ngFor="let student of studentService.studentList">
+    {{ student.name }} {{ student.mark }} {{ student.mark2 }}
+    <button (click)="studentService.calculateTotal(student)">click me</button>
+  </li>
+</ol>

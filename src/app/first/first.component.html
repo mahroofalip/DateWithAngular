@@ -1,0 +1,26 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>mark 1</th>
+        <th>mark 2</th>
+        <th>action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentService.studentList;">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.mark }}</td>
+        <td>{{ student.mark2 }}</td>
+        <td>
+          <button (click)="studentService.calculateTotal(student)">
+            Total
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

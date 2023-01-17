@@ -1,0 +1,11 @@
+<!-- <ul>
+  <li *ngFor="let menu_name of names">{{ menu_name }}</li>
+</ul> -->
+<!-- <span *ngIf="desplay">display this </span>
+<button (click)="clickedButton();"> hide and show</button>
+<h1>{{item.name}}</h1> -->
+
+
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>

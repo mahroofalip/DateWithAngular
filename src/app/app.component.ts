@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-project';
+ public title = 'paripoornna';
+  data ={
+    name:"mahroof ali",
+    domain:"mern stack"
+  } 
+
+  items = ['item1', 'item2', 'item3', 'item4'];
+
+  addItem(newItem: string) {
+    this.items.push(newItem);
+  }
+  // data ="haallo"
+  alignMent(){
+    return "center"
+  }
+   clicked =()=>{
+    alert("button clicked")
+  }
+
+
 }
